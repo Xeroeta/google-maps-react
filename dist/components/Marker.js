@@ -147,6 +147,10 @@
           position = new google.maps.LatLng(pos.lat, pos.lng);
         }
 
+        /* Marker size hack  */
+        icon.anchor = new google.maps.Point(32, 32);
+        icon.scaledSize = new google.maps.Size(64, 64);
+
         var pref = {
           map: map,
           position: position,
